@@ -1,6 +1,6 @@
 body {
     
-    background:  linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),url(/img/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
+    background:  linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),url(/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,4 +81,5 @@ button:focus {
   outline: none;
   box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
 }
+
 
