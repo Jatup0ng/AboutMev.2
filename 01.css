@@ -4,7 +4,7 @@
     font-family: 'Arial', sans-serif;
     color: white;
      
-    background:linear-gradient(rgba(0, 0, 0, 0.457), rgb(0, 0, 0)), url(/img/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
+    background:linear-gradient(rgba(0, 0, 0, 0.457), rgb(0, 0, 0)), url(/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -155,4 +155,5 @@ button:focus {
 
 header {
   text-align: right;
+
 }
