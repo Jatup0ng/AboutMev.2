@@ -87,7 +87,7 @@ header {
     display: grid;
     align-items: center;
     margin-bottom: 20px;
-    width: 85%; 
+    width: 90%; 
 }
 
 .video-preview img {
@@ -226,6 +226,7 @@ button:hover, button:focus {
         width: 100%; /* ปุ่มเต็มจอเพื่อให้กดง่ายบนมือถือ */
     }
 }
+
 
 
 
