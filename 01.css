@@ -25,7 +25,7 @@ body::before {
     
     /* ย้ายคำสั่งพื้นหลังมาไว้ที่นี่ */
     background: linear-gradient(rgba(0, 0, 0, 0.457), rgb(0, 0, 0)), 
-                url(/img/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
+                url(/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -223,6 +223,7 @@ button:hover, button:focus {
         width: 100%; /* ปุ่มเต็มจอเพื่อให้กดง่ายบนมือถือ */
     }
 }
+
 
 
 
