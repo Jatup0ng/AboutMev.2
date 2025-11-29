@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     color: white;
     margin: 0;
-    min-height: 150vh;
+    min-height: 100vh;
     position: relative;
     /* ลบ background เดิมออกจากตรงนี้ให้หมด */
 }
@@ -226,6 +226,7 @@ button:hover, button:focus {
         width: 100%; /* ปุ่มเต็มจอเพื่อให้กดง่ายบนมือถือ */
     }
 }
+
 
 
 
