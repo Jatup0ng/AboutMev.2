@@ -1,0 +1,82 @@
+body {
+    
+    background:  linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),url(/img/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+   
+    
+   
+}
+
+
+.glass-container {
+  
+    position: relative;
+    width:auto;
+    height:auto;
+    padding: 50px;
+    margin: auto;
+    border-radius: 50px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    background:rgba(255, 255, 255, 0.063);
+    border: 1px solid rgba(203, 203, 203, 0.148);
+    box-shadow: 0 25px 45px rgba(246, 246, 246, 0.322);
+    z-index: 10;
+    overflow: hidden;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+    
+}
+
+.glass-container:hover{
+  box-shadow: 0 25px 45px rgba(255, 255, 255, 0.498);
+}
+
+.glass-container h1 {
+  
+  color: rgb(255, 255, 255);
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+
+
+
+
+button {
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #ffffff, inset -4px -4px 10px #ffffff;
+  color: #575353;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 40px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  text-decoration: none;
+  
+  
+}
+
+button:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
