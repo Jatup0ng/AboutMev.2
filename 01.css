@@ -11,7 +11,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.457), rgb(0, 0, 0)), url(/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: cover;
     /* ใช้ min-height แทน height เพื่อให้ยืดตามเนื้อหา */
     min-height: 100vh;
     margin: 0;
@@ -206,4 +206,5 @@ button:hover, button:focus {
         width: 100%; /* ปุ่มเต็มจอเพื่อให้กดง่ายบนมือถือ */
     }
 }
+
 
