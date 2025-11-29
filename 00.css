@@ -1,6 +1,6 @@
 body {
     
-    background:  linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),url(/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
+    background:  linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),url(/img/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,6 +33,7 @@ body {
     display:flex ;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s ease;
     
 
 
@@ -41,6 +42,7 @@ body {
 
 .glass-container:hover{
   box-shadow: 0 25px 45px rgba(255, 255, 255, 0.498);
+  
 }
 
 .glass-container h1 {
@@ -79,5 +81,4 @@ button:focus {
   outline: none;
   box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
 }
-
 
