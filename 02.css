@@ -1,78 +1,110 @@
+/* ตั้งค่าพื้นฐานและรูปพื้นหลัง */
 body {
-    
-    background:linear-gradient(rgba(0, 0, 0, 0.457), rgb(0, 0, 0)), url(/dark-background-abstract-background-network-3d-background-7680x4320-8324.png) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.457), rgb(0, 0, 0)), url(/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
-    align-items: center;
-    margin: 0;
     min-height: 100vh;
+    margin: 0;
     font-family: 'Arial', sans-serif;
     color: white;
     
-  }
+    /* ใช้ Flexbox แทน Absolute เพื่อไม่ให้เนื้อหาขาดเวลาเลื่อนจอ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* เว้นขอบบนล่างเล็กน้อย */
+}
+
+/* กล่องเนื้อหาหลัก */
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:50%;
-    height:auto;
-    padding-top: 3px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    width: 90%;          /* ปรับเป็น % เพื่อยืดหดตามจอ */
+    max-width: 800px;    /* ล็อกความกว้างสูงสุดไม่ให้ใหญ่เกินไปในคอม */
+    height: auto;
+    
+    padding: 40px;       /* ระยะห่างภายใน */
+    
     border-radius: 30px;
     backdrop-filter: blur(10px);
-    background:rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 25px 45px rgba(246, 246, 246, 0.334);
-    overflow: hidden;
-    display:flex ;
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+    
+    display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    }
+}
 
-table, th, td {
-    border: 1px solid rgb(247, 246, 246);
-    border-collapse: collapse;
-    padding: 10px;
-    }
+/* หัวข้อ */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* ลิงก์และปุ่ม */
+a {
+    text-decoration: none;
+    align-self: flex-start; /* จัดปุ่มชิดซ้าย */
+}
 
 button {
-  background-color: #ffffff;
-  border-radius: 50px;
-  box-shadow: inset 4px 4px 10px #ffffff, inset -4px -4px 10px #ffffff;
-  color: #575353;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 15px 40px;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid rgb(206, 206, 206);
-  text-decoration: none;
-  
-  
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px #ffffff, inset -4px -4px 10px #ffffff;
+    color: #575353;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: 2px solid rgb(206, 206, 206);
+    transition: all 0.2s;
 }
 
 button:hover {
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff;
 }
 
-button:focus {
-  outline: none;
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
-}
+/* --- ส่วนจัดการตาราง --- */
 
-a {
-    color: #000;
-}
-
-h1 {
-    font-size: 50px;
+/* ตัวครอบตารางเพื่อให้เลื่อนซ้ายขวาได้ */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* หัวใจสำคัญ: ถ้าตารางล้น ให้มี scrollbar แนวนอน */
+    margin-bottom: 20px;
 }
 
 table {
-   box-shadow:1px -1px 3px -3px #c5c5c5;
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px; /* บังคับให้ตารางมีความกว้างขั้นต่ำ เพื่อไม่ให้ตัวหนังสือบี้ */
+}
 
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    text-align: center;
+    white-space: nowrap; /* ไม่ให้ตัดคำมั่วซั่ว */
+}
+
+/* --- ส่วนสำหรับมือถือ (Responsive) --- */
+/* ถ้าหน้าจอเล็กกว่า 768px (มือถือ/แท็บเล็ต) ให้ใช้กฎพวกนี้ */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;      /* ขยายกล่องให้เต็มจอมากขึ้น */
+        padding: 20px;   /* ลดขอบลง */
+    }
+
+    h1 {
+        font-size: 30px; /* ลดขนาดหัวข้อ */
+    }
+
+    th, td {
+        padding: 8px;    /* ลดช่องว่างในตาราง */
+        font-size: 14px; /* ลดขนาดตัวหนังสือในตาราง */
+    }
+    
+    button {
+        width: 100%;     /* ปุ่มเต็มความกว้าง */
+        text-align: center;
+    }
 }
