@@ -49,19 +49,27 @@ a {
 }
 
 button {
-    background-color: #ffffff;
-    border-radius: 50px;
-    box-shadow: inset 4px 4px 10px #ffffff, inset -4px -4px 10px #ffffff;
-    color: #575353;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px 30px;
-    border: 2px solid rgb(206, 206, 206);
-    transition: all 0.2s;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #ffffff, inset -4px -4px 10px #ffffff;
+  color: #575353;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 40px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  text-decoration: none;
+  
+  
 }
 
 button:hover {
-    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
 }
 
 /* --- ส่วนจัดการตาราง --- */
@@ -108,3 +116,4 @@ table, th, td {
         text-align: center;
     }
 }
+
